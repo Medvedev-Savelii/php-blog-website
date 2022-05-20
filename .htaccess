@@ -1,0 +1,7 @@
+ServerSignature off
+AddDefaultCharset UTF-8
+
+ErrorDocument 404 /php-blog-website/error.php
+ErrorDocument 400 /php-blog-website/error.php
+
+
