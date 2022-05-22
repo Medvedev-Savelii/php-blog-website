@@ -7,7 +7,7 @@
         </a>
 
         <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-            <li><a href="#" class="nav-link px-2 link-secondary">Home</a></li>
+            <li><a href="/php-blog-website" class="nav-link px-2 link-secondary">Home</a></li>
             <li><a href="#" class="nav-link px-2 link-dark">Features</a></li>
             <li><a href="#" class="nav-link px-2 link-dark">Pricing</a></li>
             <li><a href="#" class="nav-link px-2 link-dark">FAQs</a></li>
@@ -16,7 +16,7 @@
 
         <div class="col-md-3 text-end">
             <a type="button" class="btn btn-outline-primary me-2" href="#">Войти</a>
-            <a type="button" class="btn btn-primary" href="#">Регистрация</a>
+            <a type="button" class="btn btn-primary" href="reg.php">Регистрация</a>
         </div>
     </header>
 </div>
