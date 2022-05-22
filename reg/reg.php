@@ -4,19 +4,22 @@
     $login = trim(filter_var($_POST['login'], FILTER_SANITIZE_STRING));
     $pass = trim(filter_var($_POST['pass'], FILTER_SANITIZE_STRING));
 
+    $error = '';
     if(strlen($username) <= 3) {
-        echo 'error';
-        exit();
+        $error = 'Введите имя';
     } else if(strlen($email) <= 3) {
-        echo 'error';
-        exit();
+        $error = 'Введите email';
     } else if(strlen($login) <= 3) {
-        echo 'error';
-        exit();
+        $error = 'Введите логин';
     } else if(strlen($pass) <= 3) {
-        echo 'error';
+        $error = 'Введите пароль';
+    }
+
+    if($error != '') {
+        echo $error;
         exit();
     }
+
     $hash = 'saaaaaaaaajdslfhdsjkfhdklsfufgso12349721679864378492';
     $pass = md5($pass . $hash);
 
@@ -32,3 +35,4 @@
     $sql = "INSERT INTO users(name, email, login, pass) VALUES (?, ?, ?, ?)";
     $query = $pdo->prepare($sql);
     $query->execute([$username, $email, $login, $pass]);
+    echo 'Готово';
