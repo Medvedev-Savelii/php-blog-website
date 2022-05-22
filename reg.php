@@ -7,9 +7,7 @@
     ?>
 </head>
 <body>
-<?php
-require 'blocks/header.php';
-?>
+<?php require 'blocks/header.php'; ?>
 
 <main class="container mt-5">
     <div class="row">
@@ -30,16 +28,12 @@ require 'blocks/header.php';
                 <button type="submit" class="btn btn-success mt-3">Зарегистрироватся</button>
             </form>
         </div>
-        <?php
-        include 'blocks/aside.php';
-        ?>
+        <?php include 'blocks/aside.php'; ?>
 
     </div>
 </main>
 
-<?php
-include 'blocks/footer.php';
-?>
+<?php include 'blocks/footer.php'; ?>
 
 
 </body>
