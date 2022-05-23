@@ -29,7 +29,7 @@ $pass = md5($pass . $hash);
     if($user->id == 0) {
         echo 'Пользователь не найден';
     } else {
-        setcookie('log', $login, time() + 3600 * 24 * 30);
+        setcookie('log', $login, time() + 3600 * 24 * 30, '/php-blog-website');
         echo 'Готово';
     }
 
