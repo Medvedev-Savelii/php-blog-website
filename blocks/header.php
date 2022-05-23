@@ -15,7 +15,7 @@
         </ul>
 
         <div class="col-md-3 text-end">
-            <a type="button" class="btn btn-outline-primary me-2" href="#">Войти</a>
+            <a type="button" class="btn btn-outline-primary me-2" href="auth.php">Войти</a>
             <a type="button" class="btn btn-primary" href="reg.php">Регистрация</a>
         </div>
     </header>
