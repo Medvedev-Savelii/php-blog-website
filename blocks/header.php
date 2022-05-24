@@ -9,7 +9,7 @@
         <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
             <li><a href="/php-blog-website" class="nav-link px-2 link-secondary">Home</a></li>
             <?php
-            if($_COOKIE['log'] != ''):
+            if($_COOKIE['login'] != ''):
                 echo '<a class="nav-link px-2 link-dark" href="article.php">Добавить статью</a>';
                 ?>
             <?php
@@ -18,7 +18,7 @@
         </ul>
         <div class="col-md-3 text-end">
             <?php
-            if($_COOKIE['log'] == ''):
+            if($_COOKIE['login'] == ''):
             ?>
             <a type="button" class="btn btn-outline-primary me-2" href="auth.php">Войти</a>
             <a type="button" class="btn btn-primary" href="reg.php">Регистрация</a>

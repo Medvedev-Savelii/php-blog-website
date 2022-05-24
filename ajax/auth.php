@@ -22,14 +22,14 @@ $pass = md5($pass . $hash);
     require_once '../mysql_connect.php';
     $sql = "SELECT `id` FROM `users` WHERE `login` = :login && `pass` = :pass";
     $query = $pdo->prepare($sql);
-    $query->execute(['log' => $login, 'pass' => $pass]);
+    $query->execute(['login' => $login, 'pass' => $pass]);
 
     $user = $query->fetch(PDO::FETCH_OBJ);
 
     if($user->id == 0) {
         echo 'Пользователь не найден';
     } else {
-        setcookie('log', $login, time() + 3600 * 24 * 30, '/php-blog-website');
+        setcookie('login', $login, time() + 3600 * 24 * 30, '/php-blog-website');
         echo 'Готово';
     }
 
