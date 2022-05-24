@@ -22,7 +22,7 @@ $pass = md5($pass . $hash);
     require_once '../mysql_connect.php';
     $sql = "SELECT `id` FROM `users` WHERE `login` = :login && `pass` = :pass";
     $query = $pdo->prepare($sql);
-    $query->execute(['login' => $login, 'pass' => $pass]);
+    $query->execute(['log' => $login, 'pass' => $pass]);
 
     $user = $query->fetch(PDO::FETCH_OBJ);
 

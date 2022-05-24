@@ -30,7 +30,6 @@
             </form>
         </div>
         <?php include 'blocks/aside.php'; ?>
-
     </div>
 </main>
 
@@ -62,12 +61,6 @@
             }
         });
     });
-
 </script>
-
-
-
-
-
 </body>
 </html>

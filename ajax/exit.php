@@ -1,5 +1,6 @@
 <?php
-    setcookie('log', $login, time() - 3600 * 24 * 30, "/php-blog-website");
+    setcookie('log', '', time() - 3600 * 24 * 30, "/php-blog-website");
+    unset($_COOKIE['log']);
     echo true;
 ?>
 
