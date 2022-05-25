@@ -8,6 +8,7 @@
 
         <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
             <li><a href="/php-blog-website" class="nav-link px-2 link-secondary">Home</a></li>
+            <li><a href="contacts.php" class="nav-link px-2 link-secondary">Contacts</a></li>
             <?php
             if($_COOKIE['login'] != ''):
                 echo '<a class="nav-link px-2 link-dark" href="article.php">Добавить статью</a>';
